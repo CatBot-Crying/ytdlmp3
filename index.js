@@ -54,7 +54,7 @@ const youtube_parser = (url) => {
 
 
 // Download route
-app.get('/', async (req, res) => {
+app.get('/dl', async (req, res) => {
   const { url } = req.query;
 
   if (!url || typeof url !== 'string') {
